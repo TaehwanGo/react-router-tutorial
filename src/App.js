@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Menu from './components/Menu';
+import ShowPageInfo from './components/ShowPageInfo';
 import { Home, About, Posts } from './pages';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
           <Route exact path="/posts" component={Posts} />
           <Route exact path="/posts/:id" component={Posts} />
         </Switch>
+        <ShowPageInfo />
       </div>
     );
   }
