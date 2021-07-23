@@ -3,22 +3,21 @@ import { Link, Route } from 'react-router-dom';
 import Post from './Post';
 
 const Posts = ({ match }) => {
-  console.log('Posts match.url', match.url);
   return (
     <div>
       <h2>Post List</h2>
       <ul>
         <li>
-          <Link to={`${match.url}/1`}>Post #1</Link>
+          <Link to="/posts/1">Post #1</Link>
         </li>
         <li>
-          <Link to={`${match.url}/2`}>Post #2</Link>
+          <Link to="/posts/2">Post #2</Link>
         </li>
         <li>
-          <Link to={`${match.url}/3`}>Post #3</Link>
+          <Link to="/posts/3">Post #3</Link>
         </li>
         <li>
-          <Link to={`${match.url}/4`}>Post #4</Link>
+          <Link to="/posts/4">Post #4</Link>
         </li>
       </ul>
       <Route
@@ -26,7 +25,7 @@ const Posts = ({ match }) => {
         path={match.url}
         render={() => <h3>Please select any post</h3>}
       />
-      <Route path={`${match.url}/:id`} component={Post} />
+      <Route path="/posts/:id" component={Post} />
     </div>
   );
 };
