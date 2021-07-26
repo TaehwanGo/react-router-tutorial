@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Menu from './components/Menu';
-import ShowPageInfo from './components/ShowPageInfo';
-import { Home, About, Posts } from './pages';
+import Menu from 'components/Menu';
+import ShowPageInfo from 'components/ShowPageInfo';
+import { Home, About, Posts } from 'pages';
 
 class App extends Component {
   render() {

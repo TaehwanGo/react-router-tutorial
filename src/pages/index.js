@@ -1,4 +1,4 @@
-export { default as Home } from './Home';
-export { default as About } from './About';
-export { default as Posts } from './Posts';
-export { default as Post } from './Post';
+export { default as Home } from 'pages/Home';
+export { default as About } from 'pages/About';
+export { default as Posts } from 'pages/Posts';
+export { default as Post } from 'pages/Post';
